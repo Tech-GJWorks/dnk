@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Ch 02a — Charts &amp; Dasha | DNK Kundli</title>
 <link rel="stylesheet" href="style.css">
+<style>
+  table.kundli tr.past td { color:#9a8e76; }
+  table.kundli tr.current td { background:#FFF7E0; font-weight:600; color:var(--ink); border-top:2px solid var(--gold); border-bottom:2px solid var(--gold); }
+  table.kundli tr.future td { color:var(--ink-2); }
+  table.kundli td:last-child { font-size:10.5px; text-transform:uppercase; letter-spacing:1px; color:var(--muted); font-family:var(--sans); }
+  h3 { scroll-margin-top:20px; }
+</style>
 </head>
 <body>
 <aside class="nav">
@@ -187,36 +194,305 @@
 <tr><td>Pluto</td><td>Scorpio / वृश्चिक</td><td>06°43'33"</td><td>Anuradha</td><td>2</td><td>8H</td><td>—</td></tr>
 </table>
 
-<h2>Vimshottari Mahadasha Timeline</h2>
-<p><em>Balance at birth: <strong>Venus 13Y 1M 25D</strong> — dates shown below are <strong>end-dates</strong> of each MD.</em></p>
+<h2>Vimshottari — full lattice <span class="mr">विमशोत्तरी — संपूर्ण कोष्टक</span></h2>
 
+<p class="lede">Every Mahadasha (MD), every Antardasha (AD) inside each MD, and every Pratyantar-dasha (PD) inside the currently-active Mars MD — computed from Janma-Nakshatra Purvashadha (Venus-ruled) with residual <strong>13Y 1M 25D</strong> at birth. Rows are colour-coded: <em>past</em> (faded), <strong style="color:var(--gold)">current</strong> (highlighted gold), <em>future</em>. As of 15 May 2026, the native is in <strong>Mars MD → Mars–Rahu AD → Mars–Rahu–Moon PD</strong>.</p>
+
+<p><strong>Index of dasha tables on this page:</strong>
+  <a href="#md">MD</a> ·
+  <a href="#ad-ve">AD inside Ve MD</a> ·
+  <a href="#ad-su">Su MD</a> ·
+  <a href="#ad-mo">Mo MD</a> ·
+  <a href="#ad-ma">Ma MD ★</a> ·
+  <a href="#ad-ra">Ra MD</a> ·
+  <a href="#ad-ju">Ju MD</a> ·
+  <a href="#ad-sa">Sa MD</a> ·
+  <a href="#ad-me">Me MD</a> ·
+  <a href="#ad-ke">Ke MD</a> ·
+  <a href="#ad-ve2">Ve MD (next cycle)</a> ·
+  <a href="#pd-ma">PD inside Ma MD ★</a>
+</p>
+
+<h2 id="md">Full Mahadasha Schedule <span class="mr">संपूर्ण महादशा कालक्रम</span></h2>
 <table class="kundli">
-<tr><th>Mahadasha · महादशा</th><th>Years</th><th>From</th><th>To</th><th>Age band</th></tr>
-<tr><td>Venus / शुक्र (balance)</td><td>13Y 1M 25D</td><td>25-Nov-1995</td><td>19-Jan-2009</td><td>0 → 13</td></tr>
-<tr><td>Sun / सूर्य</td><td>6</td><td>19-Jan-2009</td><td>19-Jan-2015</td><td>13 → 19</td></tr>
-<tr><td>Moon / चंद्र</td><td>10</td><td>19-Jan-2015</td><td>19-Jan-2025</td><td>19 → 29</td></tr>
-<tr style="background:#ffe9b3;"><td><strong>Mars / मंगळ (current)</strong></td><td><strong>7</strong></td><td><strong>19-Jan-2025</strong></td><td><strong>19-Jan-2032</strong></td><td><strong>29 → 36</strong></td></tr>
-<tr><td>Rahu / राहू</td><td>18</td><td>19-Jan-2032</td><td>19-Jan-2050</td><td>36 → 54</td></tr>
-<tr><td>Jupiter / गुरु</td><td>16</td><td>19-Jan-2050</td><td>19-Jan-2066</td><td>54 → 70</td></tr>
-<tr><td>Saturn / शनि</td><td>19</td><td>19-Jan-2066</td><td>19-Jan-2085</td><td>70 → 89</td></tr>
-<tr><td>Mercury / बुध</td><td>17</td><td>19-Jan-2085</td><td>19-Jan-2102</td><td>89 → 106</td></tr>
-<tr><td>Ketu / केतू</td><td>7</td><td>19-Jan-2102</td><td>19-Jan-2109</td><td>106 → 113</td></tr>
+<tr><th>Mahadasha</th><th>Years</th><th>From</th><th>To</th><th>Status</th></tr>
+<tr class="past"><td>Venus / शुक्र (residual at birth · 13Y 1M 25D)</td><td>13.15</td><td>25-Nov-1995</td><td>19-Jan-2009</td><td>past</td></tr>
+<tr class="past"><td>Sun / सू (Su)</td><td>6</td><td>19-Jan-2009</td><td>20-Jan-2015</td><td>past</td></tr>
+<tr class="past"><td>Moon / चं (Mo)</td><td>10</td><td>20-Jan-2015</td><td>19-Jan-2025</td><td>past</td></tr>
+<tr class="current"><td>Mars / मं (Ma) ★</td><td>7</td><td>19-Jan-2025</td><td>20-Jan-2032</td><td>current</td></tr>
+<tr class="future"><td>Rahu / रा (Ra)</td><td>18</td><td>20-Jan-2032</td><td>19-Jan-2050</td><td>future</td></tr>
+<tr class="future"><td>Jupiter / गु (Ju)</td><td>16</td><td>19-Jan-2050</td><td>19-Jan-2066</td><td>future</td></tr>
+<tr class="future"><td>Saturn / श (Sa)</td><td>19</td><td>19-Jan-2066</td><td>19-Jan-2085</td><td>future</td></tr>
+<tr class="future"><td>Mercury / बु (Me)</td><td>17</td><td>19-Jan-2085</td><td>20-Jan-2102</td><td>future</td></tr>
+<tr class="future"><td>Ketu / के (Ke)</td><td>7</td><td>20-Jan-2102</td><td>20-Jan-2109</td><td>future</td></tr>
+<tr class="future"><td>Venus / शु (Ve · next cycle)</td><td>20</td><td>20-Jan-2109</td><td>20-Jan-2129</td><td>future</td></tr>
 </table>
 
-<p><strong>Today (May 2026, age 30):</strong> <span class="tag">Mahadasha: Mars</span> <span class="tag">Antardasha: Mars–Rahu</span> running until 05-Jul-2026, then Mars–Jupiter takes over.</p>
-
-<h2>Current Antardasha schedule (within Mars MD)</h2>
+<h3 id="ad-ve">Antardashas inside Venus MD <span class="mr">(residual · ended 19-Jan-2009)</span></h3>
+<p style="font-size:14px;color:var(--muted);font-style:italic;">Native was in Ve–Mars AD at birth (Jan 1995 – Mar 1996). All ADs from birth onward shown.</p>
 <table class="kundli">
-<tr><th>Antardasha · अंतर्दशा</th><th>From</th><th>To</th><th>Months</th></tr>
-<tr><td>Mars–Mars / मं-मं</td><td>19-Jan-2025</td><td>17-Jun-2025</td><td>~5</td></tr>
-<tr style="background:#ffe9b3;"><td><strong>Mars–Rahu / मं-रा (current)</strong></td><td>17-Jun-2025</td><td>05-Jul-2026</td><td>~12.5</td></tr>
-<tr><td>Mars–Jupiter / मं-गु</td><td>05-Jul-2026</td><td>10-Jun-2027</td><td>~11</td></tr>
-<tr><td>Mars–Saturn / मं-श</td><td>10-Jun-2027</td><td>20-Jul-2028</td><td>~13</td></tr>
-<tr><td>Mars–Mercury / मं-बु</td><td>20-Jul-2028</td><td>17-Jul-2029</td><td>~12</td></tr>
-<tr><td>Mars–Ketu / मं-के</td><td>17-Jul-2029</td><td>13-Dec-2029</td><td>~5</td></tr>
-<tr><td>Mars–Venus / मं-शु</td><td>13-Dec-2029</td><td>13-Feb-2031</td><td>~14</td></tr>
-<tr><td>Mars–Sun / मं-सू</td><td>13-Feb-2031</td><td>21-Jun-2031</td><td>~4</td></tr>
-<tr><td>Mars–Moon / मं-चं</td><td>21-Jun-2031</td><td>19-Jan-2032</td><td>~7</td></tr>
+<tr><th>AD</th><th>From</th><th>To</th><th>Duration</th><th>Status</th></tr>
+<tr class="past"><td>Ve–Ma / शु-मं (at birth)</td><td>20-Jan-1995</td><td>21-Mar-1996</td><td>1Y 2M</td><td>past</td></tr>
+<tr class="past"><td>Ve–Ra / शु-रा</td><td>21-Mar-1996</td><td>22-Mar-1999</td><td>3Y 0M</td><td>past</td></tr>
+<tr class="past"><td>Ve–Ju / शु-गु</td><td>22-Mar-1999</td><td>20-Nov-2001</td><td>2Y 8M</td><td>past</td></tr>
+<tr class="past"><td>Ve–Sa / शु-श</td><td>20-Nov-2001</td><td>20-Jan-2005</td><td>3Y 2M</td><td>past</td></tr>
+<tr class="past"><td>Ve–Me / शु-बु</td><td>20-Jan-2005</td><td>21-Nov-2007</td><td>2Y 10M</td><td>past</td></tr>
+<tr class="past"><td>Ve–Ke / शु-के</td><td>21-Nov-2007</td><td>20-Jan-2009</td><td>1Y 2M</td><td>past</td></tr>
+</table>
+
+<h3 id="ad-su">Antardashas inside Sun MD <span class="mr">(19-Jan-2009 → 20-Jan-2015)</span></h3>
+<table class="kundli">
+<tr><th>AD</th><th>From</th><th>To</th><th>Duration</th><th>Status</th></tr>
+<tr class="past"><td>Su–Su / सू-सू</td><td>19-Jan-2009</td><td>09-May-2009</td><td>4M (110d)</td><td>past</td></tr>
+<tr class="past"><td>Su–Mo / सू-चं</td><td>09-May-2009</td><td>08-Nov-2009</td><td>6M (183d)</td><td>past</td></tr>
+<tr class="past"><td>Su–Ma / सू-मं</td><td>08-Nov-2009</td><td>16-Mar-2010</td><td>4M (128d)</td><td>past</td></tr>
+<tr class="past"><td>Su–Ra / सू-रा</td><td>16-Mar-2010</td><td>08-Feb-2011</td><td>11M (329d)</td><td>past</td></tr>
+<tr class="past"><td>Su–Ju / सू-गु</td><td>08-Feb-2011</td><td>27-Nov-2011</td><td>10M (292d)</td><td>past</td></tr>
+<tr class="past"><td>Su–Sa / सू-श</td><td>27-Nov-2011</td><td>08-Nov-2012</td><td>12M (347d)</td><td>past</td></tr>
+<tr class="past"><td>Su–Me / सू-बु</td><td>08-Nov-2012</td><td>14-Sep-2013</td><td>10M (310d)</td><td>past</td></tr>
+<tr class="past"><td>Su–Ke / सू-के</td><td>14-Sep-2013</td><td>20-Jan-2014</td><td>4M (128d)</td><td>past</td></tr>
+<tr class="past"><td>Su–Ve / सू-शु</td><td>20-Jan-2014</td><td>20-Jan-2015</td><td>1Y 0M</td><td>past</td></tr>
+</table>
+
+<h3 id="ad-mo">Antardashas inside Moon MD <span class="mr">(20-Jan-2015 → 19-Jan-2025)</span></h3>
+<table class="kundli">
+<tr><th>AD</th><th>From</th><th>To</th><th>Duration</th><th>Status</th></tr>
+<tr class="past"><td>Mo–Mo / चं-चं</td><td>20-Jan-2015</td><td>20-Nov-2015</td><td>10M (304d)</td><td>past</td></tr>
+<tr class="past"><td>Mo–Ma / चं-मं</td><td>20-Nov-2015</td><td>20-Jun-2016</td><td>7M (213d)</td><td>past</td></tr>
+<tr class="past"><td>Mo–Ra / चं-रा</td><td>20-Jun-2016</td><td>20-Dec-2017</td><td>1Y 6M</td><td>past</td></tr>
+<tr class="past"><td>Mo–Ju / चं-गु</td><td>20-Dec-2017</td><td>21-Apr-2019</td><td>1Y 4M</td><td>past</td></tr>
+<tr class="past"><td>Mo–Sa / चं-श</td><td>21-Apr-2019</td><td>19-Nov-2020</td><td>1Y 7M</td><td>past</td></tr>
+<tr class="past"><td>Mo–Me / चं-बु</td><td>19-Nov-2020</td><td>20-Apr-2022</td><td>1Y 5M</td><td>past</td></tr>
+<tr class="past"><td>Mo–Ke / चं-के</td><td>20-Apr-2022</td><td>19-Nov-2022</td><td>7M (213d)</td><td>past</td></tr>
+<tr class="past"><td>Mo–Ve / चं-शु</td><td>19-Nov-2022</td><td>20-Jul-2024</td><td>1Y 8M</td><td>past</td></tr>
+<tr class="past"><td>Mo–Su / चं-सू</td><td>20-Jul-2024</td><td>19-Jan-2025</td><td>6M (183d)</td><td>past</td></tr>
+</table>
+
+<h3 id="ad-ma">Antardashas inside Mars MD <span class="mr">(19-Jan-2025 → 20-Jan-2032) ★ CURRENT MD</span></h3>
+<table class="kundli">
+<tr><th>AD</th><th>From</th><th>To</th><th>Duration</th><th>Status</th></tr>
+<tr class="past"><td>Ma–Ma / मं-मं</td><td>19-Jan-2025</td><td>17-Jun-2025</td><td>5M (149d)</td><td>past</td></tr>
+<tr class="current"><td>Ma–Ra / मं-रा ★</td><td>17-Jun-2025</td><td>06-Jul-2026</td><td>1Y 0M</td><td>current</td></tr>
+<tr class="future"><td>Ma–Ju / मं-गु</td><td>06-Jul-2026</td><td>12-Jun-2027</td><td>11M (341d)</td><td>future</td></tr>
+<tr class="future"><td>Ma–Sa / मं-श</td><td>12-Jun-2027</td><td>21-Jul-2028</td><td>1Y 1M</td><td>future</td></tr>
+<tr class="future"><td>Ma–Me / मं-बु</td><td>21-Jul-2028</td><td>18-Jul-2029</td><td>12M (362d)</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ke / मं-के</td><td>18-Jul-2029</td><td>14-Dec-2029</td><td>5M (149d)</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ve / मं-शु</td><td>14-Dec-2029</td><td>13-Feb-2031</td><td>1Y 2M</td><td>future</td></tr>
+<tr class="future"><td>Ma–Su / मं-सू</td><td>13-Feb-2031</td><td>21-Jun-2031</td><td>4M (128d)</td><td>future</td></tr>
+<tr class="future"><td>Ma–Mo / मं-चं</td><td>21-Jun-2031</td><td>20-Jan-2032</td><td>7M (213d)</td><td>future</td></tr>
+</table>
+
+<h3 id="ad-ra">Antardashas inside Rahu MD <span class="mr">(20-Jan-2032 → 19-Jan-2050)</span></h3>
+<table class="kundli">
+<tr><th>AD</th><th>From</th><th>To</th><th>Duration</th><th>Status</th></tr>
+<tr class="future"><td>Ra–Ra / रा-रा</td><td>20-Jan-2032</td><td>02-Oct-2034</td><td>2Y 8M</td><td>future</td></tr>
+<tr class="future"><td>Ra–Ju / रा-गु</td><td>02-Oct-2034</td><td>25-Feb-2037</td><td>2Y 4M</td><td>future</td></tr>
+<tr class="future"><td>Ra–Sa / रा-श</td><td>25-Feb-2037</td><td>02-Jan-2040</td><td>2Y 10M</td><td>future</td></tr>
+<tr class="future"><td>Ra–Me / रा-बु</td><td>02-Jan-2040</td><td>21-Jul-2042</td><td>2Y 6M</td><td>future</td></tr>
+<tr class="future"><td>Ra–Ke / रा-के</td><td>21-Jul-2042</td><td>09-Aug-2043</td><td>1Y 0M</td><td>future</td></tr>
+<tr class="future"><td>Ra–Ve / रा-शु</td><td>09-Aug-2043</td><td>09-Aug-2046</td><td>3Y 0M</td><td>future</td></tr>
+<tr class="future"><td>Ra–Su / रा-सू</td><td>09-Aug-2046</td><td>04-Jul-2047</td><td>11M (329d)</td><td>future</td></tr>
+<tr class="future"><td>Ra–Mo / रा-चं</td><td>04-Jul-2047</td><td>02-Jan-2049</td><td>1Y 6M</td><td>future</td></tr>
+<tr class="future"><td>Ra–Ma / रा-मं</td><td>02-Jan-2049</td><td>21-Jan-2050</td><td>1Y 0M</td><td>future</td></tr>
+</table>
+
+<h3 id="ad-ju">Antardashas inside Jupiter MD <span class="mr">(19-Jan-2050 → 19-Jan-2066)</span></h3>
+<table class="kundli">
+<tr><th>AD</th><th>From</th><th>To</th><th>Duration</th><th>Status</th></tr>
+<tr class="future"><td>Ju–Ju / गु-गु</td><td>19-Jan-2050</td><td>08-Mar-2052</td><td>2Y 1M</td><td>future</td></tr>
+<tr class="future"><td>Ju–Sa / गु-श</td><td>08-Mar-2052</td><td>19-Sep-2054</td><td>2Y 6M</td><td>future</td></tr>
+<tr class="future"><td>Ju–Me / गु-बु</td><td>19-Sep-2054</td><td>25-Dec-2056</td><td>2Y 3M</td><td>future</td></tr>
+<tr class="future"><td>Ju–Ke / गु-के</td><td>25-Dec-2056</td><td>01-Dec-2057</td><td>11M (341d)</td><td>future</td></tr>
+<tr class="future"><td>Ju–Ve / गु-शु</td><td>01-Dec-2057</td><td>01-Aug-2060</td><td>2Y 8M</td><td>future</td></tr>
+<tr class="future"><td>Ju–Su / गु-सू</td><td>01-Aug-2060</td><td>20-May-2061</td><td>10M (292d)</td><td>future</td></tr>
+<tr class="future"><td>Ju–Mo / गु-चं</td><td>20-May-2061</td><td>19-Sep-2062</td><td>1Y 4M</td><td>future</td></tr>
+<tr class="future"><td>Ju–Ma / गु-मं</td><td>19-Sep-2062</td><td>26-Aug-2063</td><td>11M (341d)</td><td>future</td></tr>
+<tr class="future"><td>Ju–Ra / गु-रा</td><td>26-Aug-2063</td><td>19-Jan-2066</td><td>2Y 4M</td><td>future</td></tr>
+</table>
+
+<h3 id="ad-sa">Antardashas inside Saturn MD <span class="mr">(19-Jan-2066 → 19-Jan-2085)</span></h3>
+<table class="kundli">
+<tr><th>AD</th><th>From</th><th>To</th><th>Duration</th><th>Status</th></tr>
+<tr class="future"><td>Sa–Sa / श-श</td><td>19-Jan-2066</td><td>22-Jan-2069</td><td>3Y 0M</td><td>future</td></tr>
+<tr class="future"><td>Sa–Me / श-बु</td><td>22-Jan-2069</td><td>02-Oct-2071</td><td>2Y 8M</td><td>future</td></tr>
+<tr class="future"><td>Sa–Ke / श-के</td><td>02-Oct-2071</td><td>10-Nov-2072</td><td>1Y 1M</td><td>future</td></tr>
+<tr class="future"><td>Sa–Ve / श-शु</td><td>10-Nov-2072</td><td>11-Jan-2076</td><td>3Y 2M</td><td>future</td></tr>
+<tr class="future"><td>Sa–Su / श-सू</td><td>11-Jan-2076</td><td>23-Dec-2076</td><td>12M (347d)</td><td>future</td></tr>
+<tr class="future"><td>Sa–Mo / श-चं</td><td>23-Dec-2076</td><td>24-Jul-2078</td><td>1Y 7M</td><td>future</td></tr>
+<tr class="future"><td>Sa–Ma / श-मं</td><td>24-Jul-2078</td><td>02-Sep-2079</td><td>1Y 1M</td><td>future</td></tr>
+<tr class="future"><td>Sa–Ra / श-रा</td><td>02-Sep-2079</td><td>09-Jul-2082</td><td>2Y 10M</td><td>future</td></tr>
+<tr class="future"><td>Sa–Ju / श-गु</td><td>09-Jul-2082</td><td>19-Jan-2085</td><td>2Y 6M</td><td>future</td></tr>
+</table>
+
+<h3 id="ad-me">Antardashas inside Mercury MD <span class="mr">(19-Jan-2085 → 20-Jan-2102)</span></h3>
+<table class="kundli">
+<tr><th>AD</th><th>From</th><th>To</th><th>Duration</th><th>Status</th></tr>
+<tr class="future"><td>Me–Me / बु-बु</td><td>19-Jan-2085</td><td>18-Jun-2087</td><td>2Y 5M</td><td>future</td></tr>
+<tr class="future"><td>Me–Ke / बु-के</td><td>18-Jun-2087</td><td>14-Jun-2088</td><td>12M (362d)</td><td>future</td></tr>
+<tr class="future"><td>Me–Ve / बु-शु</td><td>14-Jun-2088</td><td>15-Apr-2091</td><td>2Y 10M</td><td>future</td></tr>
+<tr class="future"><td>Me–Su / बु-सू</td><td>15-Apr-2091</td><td>19-Feb-2092</td><td>10M (310d)</td><td>future</td></tr>
+<tr class="future"><td>Me–Mo / बु-चं</td><td>19-Feb-2092</td><td>20-Jul-2093</td><td>1Y 5M</td><td>future</td></tr>
+<tr class="future"><td>Me–Ma / बु-मं</td><td>20-Jul-2093</td><td>17-Jul-2094</td><td>12M (362d)</td><td>future</td></tr>
+<tr class="future"><td>Me–Ra / बु-रा</td><td>17-Jul-2094</td><td>02-Feb-2097</td><td>2Y 6M</td><td>future</td></tr>
+<tr class="future"><td>Me–Ju / बु-गु</td><td>02-Feb-2097</td><td>11-May-2099</td><td>2Y 3M</td><td>future</td></tr>
+<tr class="future"><td>Me–Sa / बु-श</td><td>11-May-2099</td><td>19-Jan-2102</td><td>2Y 8M</td><td>future</td></tr>
+</table>
+
+<h3 id="ad-ke">Antardashas inside Ketu MD <span class="mr">(20-Jan-2102 → 20-Jan-2109)</span></h3>
+<table class="kundli">
+<tr><th>AD</th><th>From</th><th>To</th><th>Duration</th><th>Status</th></tr>
+<tr class="future"><td>Ke–Ke / के-के</td><td>20-Jan-2102</td><td>18-Jun-2102</td><td>5M (149d)</td><td>future</td></tr>
+<tr class="future"><td>Ke–Ve / के-शु</td><td>18-Jun-2102</td><td>18-Aug-2103</td><td>1Y 2M</td><td>future</td></tr>
+<tr class="future"><td>Ke–Su / के-सू</td><td>18-Aug-2103</td><td>24-Dec-2103</td><td>4M (128d)</td><td>future</td></tr>
+<tr class="future"><td>Ke–Mo / के-चं</td><td>24-Dec-2103</td><td>24-Jul-2104</td><td>7M (213d)</td><td>future</td></tr>
+<tr class="future"><td>Ke–Ma / के-मं</td><td>24-Jul-2104</td><td>20-Dec-2104</td><td>5M (149d)</td><td>future</td></tr>
+<tr class="future"><td>Ke–Ra / के-रा</td><td>20-Dec-2104</td><td>08-Jan-2106</td><td>1Y 0M</td><td>future</td></tr>
+<tr class="future"><td>Ke–Ju / के-गु</td><td>08-Jan-2106</td><td>15-Dec-2106</td><td>11M (341d)</td><td>future</td></tr>
+<tr class="future"><td>Ke–Sa / के-श</td><td>15-Dec-2106</td><td>24-Jan-2108</td><td>1Y 1M</td><td>future</td></tr>
+<tr class="future"><td>Ke–Me / के-बु</td><td>24-Jan-2108</td><td>20-Jan-2109</td><td>12M (362d)</td><td>future</td></tr>
+</table>
+
+<h3 id="ad-ve2">Antardashas inside Venus MD <span class="mr">(next cycle · 20-Jan-2109 → 20-Jan-2129)</span></h3>
+<table class="kundli">
+<tr><th>AD</th><th>From</th><th>To</th><th>Duration</th><th>Status</th></tr>
+<tr class="future"><td>Ve–Ve / शु-शु</td><td>20-Jan-2109</td><td>22-May-2112</td><td>3Y 4M</td><td>future</td></tr>
+<tr class="future"><td>Ve–Su / शु-सू</td><td>22-May-2112</td><td>22-May-2113</td><td>1Y 0M</td><td>future</td></tr>
+<tr class="future"><td>Ve–Mo / शु-चं</td><td>22-May-2113</td><td>21-Jan-2115</td><td>1Y 8M</td><td>future</td></tr>
+<tr class="future"><td>Ve–Ma / शु-मं</td><td>21-Jan-2115</td><td>22-Mar-2116</td><td>1Y 2M</td><td>future</td></tr>
+<tr class="future"><td>Ve–Ra / शु-रा</td><td>22-Mar-2116</td><td>23-Mar-2119</td><td>3Y 0M</td><td>future</td></tr>
+<tr class="future"><td>Ve–Ju / शु-गु</td><td>23-Mar-2119</td><td>21-Nov-2121</td><td>2Y 8M</td><td>future</td></tr>
+<tr class="future"><td>Ve–Sa / शु-श</td><td>21-Nov-2121</td><td>21-Jan-2125</td><td>3Y 2M</td><td>future</td></tr>
+<tr class="future"><td>Ve–Me / शु-बु</td><td>21-Jan-2125</td><td>22-Nov-2127</td><td>2Y 10M</td><td>future</td></tr>
+<tr class="future"><td>Ve–Ke / शु-के</td><td>22-Nov-2127</td><td>21-Jan-2129</td><td>1Y 2M</td><td>future</td></tr>
+</table>
+
+<h2 id="pd-ma">Pratyantar-dasha (PD) — full lattice inside Mars MD <span class="mr">मंगळ-MD अंतर्गत प्रत्यंतर्दशा</span></h2>
+<p>The PD level shows the finest-grain timing windows (days to weeks) used for event-prediction. All 81 PDs across the 9 ADs of the current Mars MD are listed below. Current PD as of May 2026 is <strong>Ma–Ra–Mo (12-May-2026 → 13-Jun-2026)</strong>.</p>
+
+<h3>Ma–Ma AD <span class="mr">(19-Jan-2025 → 17-Jun-2025)</span></h3>
+<table class="kundli">
+<tr><th>PD</th><th>From</th><th>To</th><th>Duration</th><th>Status</th></tr>
+<tr class="past"><td>Ma–Ma–Ma / मं-मं-मं</td><td>19-Jan-2025</td><td>28-Jan-2025</td><td>9d</td><td>past</td></tr>
+<tr class="past"><td>Ma–Ma–Ra / मं-मं-रा</td><td>28-Jan-2025</td><td>19-Feb-2025</td><td>22d</td><td>past</td></tr>
+<tr class="past"><td>Ma–Ma–Ju / मं-मं-गु</td><td>19-Feb-2025</td><td>11-Mar-2025</td><td>20d</td><td>past</td></tr>
+<tr class="past"><td>Ma–Ma–Sa / मं-मं-श</td><td>11-Mar-2025</td><td>04-Apr-2025</td><td>24d</td><td>past</td></tr>
+<tr class="past"><td>Ma–Ma–Me / मं-मं-बु</td><td>04-Apr-2025</td><td>25-Apr-2025</td><td>21d</td><td>past</td></tr>
+<tr class="past"><td>Ma–Ma–Ke / मं-मं-के</td><td>25-Apr-2025</td><td>04-May-2025</td><td>9d</td><td>past</td></tr>
+<tr class="past"><td>Ma–Ma–Ve / मं-मं-शु</td><td>04-May-2025</td><td>29-May-2025</td><td>25d</td><td>past</td></tr>
+<tr class="past"><td>Ma–Ma–Su / मं-मं-सू</td><td>29-May-2025</td><td>05-Jun-2025</td><td>7d</td><td>past</td></tr>
+<tr class="past"><td>Ma–Ma–Mo / मं-मं-चं</td><td>05-Jun-2025</td><td>17-Jun-2025</td><td>12d</td><td>past</td></tr>
+</table>
+
+<h3>Ma–Ra AD <span class="mr">(17-Jun-2025 → 06-Jul-2026) ★ CURRENT AD</span></h3>
+<table class="kundli">
+<tr><th>PD</th><th>From</th><th>To</th><th>Duration</th><th>Status</th></tr>
+<tr class="past"><td>Ma–Ra–Ra / मं-रा-रा</td><td>17-Jun-2025</td><td>14-Aug-2025</td><td>58d</td><td>past</td></tr>
+<tr class="past"><td>Ma–Ra–Ju / मं-रा-गु</td><td>14-Aug-2025</td><td>04-Oct-2025</td><td>51d</td><td>past</td></tr>
+<tr class="past"><td>Ma–Ra–Sa / मं-रा-श</td><td>04-Oct-2025</td><td>04-Dec-2025</td><td>2M (61d)</td><td>past</td></tr>
+<tr class="past"><td>Ma–Ra–Me / मं-रा-बु</td><td>04-Dec-2025</td><td>27-Jan-2026</td><td>54d</td><td>past</td></tr>
+<tr class="past"><td>Ma–Ra–Ke / मं-रा-के</td><td>27-Jan-2026</td><td>18-Feb-2026</td><td>22d</td><td>past</td></tr>
+<tr class="past"><td>Ma–Ra–Ve / मं-रा-शु</td><td>18-Feb-2026</td><td>23-Apr-2026</td><td>2M (64d)</td><td>past</td></tr>
+<tr class="past"><td>Ma–Ra–Su / मं-रा-सू</td><td>23-Apr-2026</td><td>12-May-2026</td><td>19d</td><td>past</td></tr>
+<tr class="current"><td>Ma–Ra–Mo / मं-रा-चं ★</td><td>12-May-2026</td><td>13-Jun-2026</td><td>32d</td><td>current</td></tr>
+<tr class="future"><td>Ma–Ra–Ma / मं-रा-मं</td><td>13-Jun-2026</td><td>05-Jul-2026</td><td>22d</td><td>future</td></tr>
+</table>
+
+<h3>Ma–Ju AD <span class="mr">(06-Jul-2026 → 12-Jun-2027)</span></h3>
+<table class="kundli">
+<tr><th>PD</th><th>From</th><th>To</th><th>Duration</th><th>Status</th></tr>
+<tr class="future"><td>Ma–Ju–Ju / मं-गु-गु</td><td>06-Jul-2026</td><td>20-Aug-2026</td><td>45d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ju–Sa / मं-गु-श</td><td>20-Aug-2026</td><td>13-Oct-2026</td><td>54d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ju–Me / मं-गु-बु</td><td>13-Oct-2026</td><td>30-Nov-2026</td><td>48d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ju–Ke / मं-गु-के</td><td>30-Nov-2026</td><td>20-Dec-2026</td><td>20d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ju–Ve / मं-गु-शु</td><td>20-Dec-2026</td><td>15-Feb-2027</td><td>57d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ju–Su / मं-गु-सू</td><td>15-Feb-2027</td><td>04-Mar-2027</td><td>17d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ju–Mo / मं-गु-चं</td><td>04-Mar-2027</td><td>01-Apr-2027</td><td>28d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ju–Ma / मं-गु-मं</td><td>01-Apr-2027</td><td>21-Apr-2027</td><td>20d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ju–Ra / मं-गु-रा</td><td>21-Apr-2027</td><td>11-Jun-2027</td><td>51d</td><td>future</td></tr>
+</table>
+
+<h3>Ma–Sa AD <span class="mr">(12-Jun-2027 → 21-Jul-2028)</span></h3>
+<table class="kundli">
+<tr><th>PD</th><th>From</th><th>To</th><th>Duration</th><th>Status</th></tr>
+<tr class="future"><td>Ma–Sa–Sa / मं-श-श</td><td>12-Jun-2027</td><td>15-Aug-2027</td><td>2M (64d)</td><td>future</td></tr>
+<tr class="future"><td>Ma–Sa–Me / मं-श-बु</td><td>15-Aug-2027</td><td>11-Oct-2027</td><td>57d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Sa–Ke / मं-श-के</td><td>11-Oct-2027</td><td>04-Nov-2027</td><td>24d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Sa–Ve / मं-श-शु</td><td>04-Nov-2027</td><td>10-Jan-2028</td><td>2M (67d)</td><td>future</td></tr>
+<tr class="future"><td>Ma–Sa–Su / मं-श-सू</td><td>10-Jan-2028</td><td>30-Jan-2028</td><td>20d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Sa–Mo / मं-श-चं</td><td>30-Jan-2028</td><td>04-Mar-2028</td><td>34d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Sa–Ma / मं-श-मं</td><td>04-Mar-2028</td><td>28-Mar-2028</td><td>24d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Sa–Ra / मं-श-रा</td><td>28-Mar-2028</td><td>28-May-2028</td><td>2M (61d)</td><td>future</td></tr>
+<tr class="future"><td>Ma–Sa–Ju / मं-श-गु</td><td>28-May-2028</td><td>21-Jul-2028</td><td>54d</td><td>future</td></tr>
+</table>
+
+<h3>Ma–Me AD <span class="mr">(21-Jul-2028 → 18-Jul-2029)</span></h3>
+<table class="kundli">
+<tr><th>PD</th><th>From</th><th>To</th><th>Duration</th><th>Status</th></tr>
+<tr class="future"><td>Ma–Me–Me / मं-बु-बु</td><td>21-Jul-2028</td><td>10-Sep-2028</td><td>51d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Me–Ke / मं-बु-के</td><td>10-Sep-2028</td><td>01-Oct-2028</td><td>21d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Me–Ve / मं-बु-शु</td><td>01-Oct-2028</td><td>30-Nov-2028</td><td>2M (60d)</td><td>future</td></tr>
+<tr class="future"><td>Ma–Me–Su / मं-बु-सू</td><td>30-Nov-2028</td><td>18-Dec-2028</td><td>18d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Me–Mo / मं-बु-चं</td><td>18-Dec-2028</td><td>17-Jan-2029</td><td>30d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Me–Ma / मं-बु-मं</td><td>17-Jan-2029</td><td>07-Feb-2029</td><td>21d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Me–Ra / मं-बु-रा</td><td>07-Feb-2029</td><td>02-Apr-2029</td><td>54d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Me–Ju / मं-बु-गु</td><td>02-Apr-2029</td><td>20-May-2029</td><td>48d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Me–Sa / मं-बु-श</td><td>20-May-2029</td><td>16-Jul-2029</td><td>57d</td><td>future</td></tr>
+</table>
+
+<h3>Ma–Ke AD <span class="mr">(18-Jul-2029 → 14-Dec-2029)</span></h3>
+<table class="kundli">
+<tr><th>PD</th><th>From</th><th>To</th><th>Duration</th><th>Status</th></tr>
+<tr class="future"><td>Ma–Ke–Ke / मं-के-के</td><td>18-Jul-2029</td><td>27-Jul-2029</td><td>9d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ke–Ve / मं-के-शु</td><td>27-Jul-2029</td><td>21-Aug-2029</td><td>25d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ke–Su / मं-के-सू</td><td>21-Aug-2029</td><td>28-Aug-2029</td><td>7d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ke–Mo / मं-के-चं</td><td>28-Aug-2029</td><td>09-Sep-2029</td><td>12d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ke–Ma / मं-के-मं</td><td>09-Sep-2029</td><td>18-Sep-2029</td><td>9d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ke–Ra / मं-के-रा</td><td>18-Sep-2029</td><td>10-Oct-2029</td><td>22d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ke–Ju / मं-के-गु</td><td>10-Oct-2029</td><td>30-Oct-2029</td><td>20d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ke–Sa / मं-के-श</td><td>30-Oct-2029</td><td>23-Nov-2029</td><td>24d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ke–Me / मं-के-बु</td><td>23-Nov-2029</td><td>14-Dec-2029</td><td>21d</td><td>future</td></tr>
+</table>
+
+<h3>Ma–Ve AD <span class="mr">(14-Dec-2029 → 13-Feb-2031) — critical marak window</span></h3>
+<table class="kundli">
+<tr><th>PD</th><th>From</th><th>To</th><th>Duration</th><th>Status</th></tr>
+<tr class="future"><td>Ma–Ve–Ve / मं-शु-शु</td><td>14-Dec-2029</td><td>23-Feb-2030</td><td>2M (71d)</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ve–Su / मं-शु-सू</td><td>23-Feb-2030</td><td>16-Mar-2030</td><td>21d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ve–Mo / मं-शु-चं</td><td>16-Mar-2030</td><td>21-Apr-2030</td><td>36d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ve–Ma / मं-शु-मं</td><td>21-Apr-2030</td><td>16-May-2030</td><td>25d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ve–Ra / मं-शु-रा</td><td>16-May-2030</td><td>19-Jul-2030</td><td>2M (64d)</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ve–Ju / मं-शु-गु</td><td>19-Jul-2030</td><td>14-Sep-2030</td><td>57d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ve–Sa / मं-शु-श</td><td>14-Sep-2030</td><td>20-Nov-2030</td><td>2M (67d)</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ve–Me / मं-शु-बु</td><td>20-Nov-2030</td><td>19-Jan-2031</td><td>2M (60d)</td><td>future</td></tr>
+<tr class="future"><td>Ma–Ve–Ke / मं-शु-के</td><td>19-Jan-2031</td><td>13-Feb-2031</td><td>25d</td><td>future</td></tr>
+</table>
+
+<h3>Ma–Su AD <span class="mr">(13-Feb-2031 → 21-Jun-2031)</span></h3>
+<table class="kundli">
+<tr><th>PD</th><th>From</th><th>To</th><th>Duration</th><th>Status</th></tr>
+<tr class="future"><td>Ma–Su–Su / मं-सू-सू</td><td>13-Feb-2031</td><td>19-Feb-2031</td><td>6d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Su–Mo / मं-सू-चं</td><td>19-Feb-2031</td><td>02-Mar-2031</td><td>11d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Su–Ma / मं-सू-मं</td><td>02-Mar-2031</td><td>09-Mar-2031</td><td>7d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Su–Ra / मं-सू-रा</td><td>09-Mar-2031</td><td>28-Mar-2031</td><td>19d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Su–Ju / मं-सू-गु</td><td>28-Mar-2031</td><td>14-Apr-2031</td><td>17d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Su–Sa / मं-सू-श</td><td>14-Apr-2031</td><td>04-May-2031</td><td>20d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Su–Me / मं-सू-बु</td><td>04-May-2031</td><td>22-May-2031</td><td>18d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Su–Ke / मं-सू-के</td><td>22-May-2031</td><td>29-May-2031</td><td>7d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Su–Ve / मं-सू-शु</td><td>29-May-2031</td><td>19-Jun-2031</td><td>21d</td><td>future</td></tr>
+</table>
+
+<h3>Ma–Mo AD <span class="mr">(21-Jun-2031 → 20-Jan-2032)</span></h3>
+<table class="kundli">
+<tr><th>PD</th><th>From</th><th>To</th><th>Duration</th><th>Status</th></tr>
+<tr class="future"><td>Ma–Mo–Mo / मं-चं-चं</td><td>21-Jun-2031</td><td>09-Jul-2031</td><td>18d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Mo–Ma / मं-चं-मं</td><td>09-Jul-2031</td><td>21-Jul-2031</td><td>12d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Mo–Ra / मं-चं-रा</td><td>21-Jul-2031</td><td>22-Aug-2031</td><td>32d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Mo–Ju / मं-चं-गु</td><td>22-Aug-2031</td><td>19-Sep-2031</td><td>28d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Mo–Sa / मं-चं-श</td><td>19-Sep-2031</td><td>23-Oct-2031</td><td>34d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Mo–Me / मं-चं-बु</td><td>23-Oct-2031</td><td>22-Nov-2031</td><td>30d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Mo–Ke / मं-चं-के</td><td>22-Nov-2031</td><td>04-Dec-2031</td><td>12d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Mo–Ve / मं-चं-शु</td><td>04-Dec-2031</td><td>09-Jan-2032</td><td>36d</td><td>future</td></tr>
+<tr class="future"><td>Ma–Mo–Su / मं-चं-सू</td><td>09-Jan-2032</td><td>20-Jan-2032</td><td>11d</td><td>future</td></tr>
 </table>
 
 <h2>Key Yogas at a glance</h2>
