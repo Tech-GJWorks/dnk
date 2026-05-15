@@ -1,4 +1,4 @@
-/* DNK — Dharmesh Naresh Kandare · Consultation Book stylesheet */
+/* DNK — Dharmesh Naresh Kandare · Astrologer-Training Book stylesheet */
 
 * { box-sizing: border-box; }
 
@@ -6,11 +6,140 @@ body {
   font-family: 'Georgia', 'Cambria', 'Times New Roman', serif;
   background: #fdf6e3;
   color: #2c2c2c;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+}
+
+main {
   max-width: 920px;
   margin: 0 auto;
-  padding: 0 24px 80px;
-  line-height: 1.65;
-  font-size: 16px;
+  padding: 28px 36px 80px;
+}
+
+aside.nav {
+  background: #7a2e0a;
+  color: #fff8e7;
+  padding: 24px 18px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 3px solid #b7410e;
+}
+
+aside.nav .brand {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffd99c;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+aside.nav .brand-sub {
+  font-size: 12px;
+  font-style: italic;
+  color: #fbe4b5;
+  margin-bottom: 18px;
+  border-bottom: 1px dashed #c97b40;
+  padding-bottom: 12px;
+}
+
+aside.nav h4 {
+  color: #ffd99c;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 16px 0 6px;
+  font-weight: 700;
+}
+
+aside.nav a {
+  display: block;
+  color: #fff8e7;
+  text-decoration: none;
+  padding: 4px 8px;
+  font-size: 13.5px;
+  border-radius: 3px;
+  margin: 1px 0;
+  line-height: 1.35;
+}
+
+aside.nav a:hover { background: rgba(255,255,255,0.12); }
+aside.nav a.active { background: #b7410e; color: #fff; font-weight: 600; }
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed #c8a060;
+  margin-bottom: 18px;
+  font-size: 13px;
+  color: #7a5a30;
+}
+
+.topbar .breadcrumb { font-style: italic; }
+.topbar .chapter-num { font-weight: 700; color: #b7410e; letter-spacing: 1px; }
+
+.lede {
+  font-size: 17px;
+  color: #4a3018;
+  margin: 18px 0;
+  line-height: 1.75;
+}
+
+.callout {
+  background: #fff4d6;
+  border: 1px solid #c8a060;
+  border-left: 6px solid #b7410e;
+  border-radius: 4px;
+  padding: 16px 22px;
+  margin: 22px 0;
+}
+
+.callout.gold {
+  background: linear-gradient(180deg, #fff8e0 0%, #ffe9b3 100%);
+}
+
+.callout .label {
+  color: #7a2e0a;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.nav-prev-next {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0 0;
+  padding-top: 18px;
+  border-top: 1px dashed #c8a060;
+  font-size: 14px;
+}
+
+.nav-prev-next a {
+  color: #b7410e;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 14px;
+  background: #fff8e7;
+  border: 1px solid #c8a060;
+  border-radius: 4px;
+}
+
+.nav-prev-next a:hover { background: #b7410e; color: #fff7e0; }
+
+@media (max-width: 900px) {
+  body { grid-template-columns: 1fr; }
+  aside.nav { position: relative; height: auto; }
+  main { padding: 20px 18px 60px; }
 }
 
 header.topnav {
